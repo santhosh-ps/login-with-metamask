@@ -1,7 +1,8 @@
-# Getting Started with Create React App
+# React app to tryout login with Metamask
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Checkout this post for detail:
 
+https://letsprogramit.com/posts/login-with-crypto-wallet/
 ## Available Scripts
 
 In the project directory, you can run:
