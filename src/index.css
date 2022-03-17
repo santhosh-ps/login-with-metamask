@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.login-btn-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.token-wrap {
+  background: antiquewhite;
+    width: 600px;
+    overflow-x: scroll;
+}
