@@ -3,9 +3,6 @@ import './App.css';
 import { ethers } from "ethers";
 
 function App() {
-  const [isMetamaskInstalled, setIsMetamaskInstalled] = useState(
-    !!(window as any).ethereum
-  );
   const storedToken = localStorage.getItem('token');
   const [token, setToken] = useState(storedToken);
   const onLogin = async() => {
@@ -40,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <div className='login-btn-wrap'>
-        <button hidden={!!token} disabled={!isMetamaskInstalled} onClick={onLogin}>
+        <button hidden={!!token} disabled={!(window as any).ethereum} onClick={onLogin}>
             Login With Metamask
         </button>
         {
